@@ -52,8 +52,7 @@ func TestGetAPIKey(t *testing.T) {
 				t.Errorf("Unexpected: TestGetAPIKey:%v\n", err)
 				return
 			}
-			// !=
-			if output == test.expect {
+			if output != test.expect {
 				t.Errorf("Unexpected: TestGetAPIKey:%s", output)
 				return
 			}
